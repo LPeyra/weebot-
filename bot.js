@@ -1,6 +1,3 @@
-
-// Log our bot in
-client.login(token);
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
