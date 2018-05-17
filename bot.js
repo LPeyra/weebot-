@@ -1,3 +1,4 @@
+npm i --save discord.js
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
