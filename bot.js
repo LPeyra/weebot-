@@ -16,7 +16,7 @@ client.on('message', message => {
     	message.reply('BONG!');
   	}
 });
-bot.on('message', message => {
+client.on('message', message => {
 
   if (message.content.startsWith('!play')) {
     // On récupère le premier channel audio du serveur
