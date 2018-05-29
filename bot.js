@@ -23,7 +23,7 @@ client.on('reconnecting', () => {
 	console.log('I\'m reconnecting');
 });
 
-//TEXT INTERACTION
+//TEXT INTERACTIONS
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.channel.send('PONG!');
