@@ -50,7 +50,7 @@ else {
   if (!permissions.has('SPEAK')) {
     return msg.channel.send('I cannot speak in this voice channel, make sure I have the proper permissions!');
   }
-}(broadcast.playFile('./music/'foundWord_command'.mp3'));
+}(broadcast.playFile('./music/weeb.mp3'));
 
 });
 client.on('message', message => {
