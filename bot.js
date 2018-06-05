@@ -45,14 +45,14 @@ else {
   if (!voiceChannel) return msg.channel.send('I\'m sorry but you need to be in a voice channel to play music!');
   const permissions = voiceChannel.permissionsFor(msg.client.user);
   if (!permissions.has('CONNECT')) {
-    return msg.channel.send('I cannot connect to your voice channel, make sure I have the proper permissions!');
-  }
+    return msg.channel.send('I cannot connect to your voice channel, make sure I have the proper permissions!')
+  };
   if (!permissions.has('SPEAK')) {
-    return msg.channel.send('I cannot speak in this voice channel, make sure I have the proper permissions!');
-  }
-}(broadcast.playFile('./music/weeb.mp3'));
+    return msg.channel.send('I cannot speak in this voice channel, make sure I have the proper permissions!')
+  };
+  (broadcast.playFile('./music/weeb.mp3'));
+};
 
-});
 client.on('message', message => {
 
   if (message.content.startsWith('!play')) {
