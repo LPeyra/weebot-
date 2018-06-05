@@ -58,6 +58,6 @@ client.on('message', message => {
   if (message.content.startsWith('!play')) {
     voiceChannel.join()
   .catch(console.error);
-  });
+  };
 
 client.login(process.env.BOT_TOKEN);
